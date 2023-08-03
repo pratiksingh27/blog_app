@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// import {db} from " ";
+import Addblog from './components/Addblog';
+import BlogDisplay from './components/BlogDisplay';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App  max-w-[1400px] gap-3 md:flex mx-[10vw] pt-6">
+      <div className='justify-start'>
+        <BlogDisplay/>
+      </div>
+      <div className='justify-end'>
+        <Addblog/>
+      </div>
     </div>
   );
 }
